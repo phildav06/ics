@@ -1,0 +1,66 @@
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+#logoTitle {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 10px 100px 10px 100px;
+    border-radius: 35px;
+    background-color: #1257A4;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-left:auto;
+    margin-right: auto;
+    width: 30%;
+    min-width: 500px;
+}
+header {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 100px;
+}
+
+
+#banniere {
+    background-size: cover;
+    background-position: 45%;
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/pexels-burst-374074.jpg);
+}
+
+#logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 70%;
+    height: auto;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.65);
+}
