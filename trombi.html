@@ -46,177 +46,29 @@
                 </nav>
             </div>
         </header>
-
+        <div class="buttons">
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur web');">Développeur web</button>
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur JAVA');">Développeur JAVA</button>
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur PHP');">Développeur PHP</button>
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Technicien d\'assistance informatique');">Technicien
+                d'assistance informatique</button>
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Concepteur d\'applications');">Concepteur
+                d'applications</button>
+            <button type="button" class="btn-lg btn-primary" onclick="getTitles('Animateur e-commerce');">Animateur e-commerce</button>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn-lg btn-secondary" onclick="getForm('');">Toutes les formations</button>
+            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en alternance');">Formation en alternance</button>
+            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en continu');">Formation en continu</button>
+        </div>
         <main>
-            <section class="tromnTab">
-                <h2 id="altern">Élèves en alternance</h2>
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/30020064-une-photo-d-identité-de-jeune-attrayant-sexy-belle-femme-en-chemise-blanche-et-costume-isolé-sur-un-.webp"
-                            class="figure-img img-fluid rounded-circle Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Sabrina FOMBICHE</h5>
-                        <h6>Développeur web</h6>
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. </cite>
-                    </div>
-                </div>
 
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/f42c98d299ef.jpg"
-                            class="figure-img img-fluid rounded-circle Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>John DOE</h5>
-                        <h6>Développeur PHP</h6>
-
-                        <cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/image.jpg" class="figure-img img-fluid rounded-circle Small shadow"
-                            alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Jaffar ALADAWI</h5>
-                        <h6>Animateur e-commerce</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/CV_exemple-3.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Paola CABRI</h5>
-                        <h6>Animateur e-commerce</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/istockphoto-1125638891-612x612.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Magalie STORMAN</h5>
-                        <h6>Concepteur d'applications</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/istockphoto-491292474-612x612.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Mathieu LAMBERT</h5>
-                        <h6>Développeur web</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/MASSEAUX-Léo-2-39366-Copie-2.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Léo MASSEAUX</h5>
-                        <h6>Développeur JAVA</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/me-jean-baptiste-le-dall-photo-amelie-marzouk-1594547994.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Jean-Baptiste MARZOUK</h5>
-                        <h6>Concepteur d'applications</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/passfoto-beispiel-nachher.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Nachher BEISPIEL</h5>
-                        <h6>Développeur web</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
+            <section class="trombTab" id="altern">
+                <!-- Ici est injecté le code html par le JS pour les élèves en alternance-->
             </section>
 
-            <section class="trombTab2">
-                <h2 id="continu">Élèves en continu</h2>
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/FrancisLaurentFRPasseport35x45mmjpg_5e031965b7e3d.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Francis LAURENT</h5>
-                        <h6>Technicien d'assistance informatique</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. </cite>
-                    </div>
-                </div>
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/photo_identite_classique_vignette_400x400-1.400x400.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Brigitte FORTE</h5>
-                        <h6>Développeur web</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-                <div class="trombImage">
-                    <figure class="figure">
-                        <img src="images/trombi/AUTRES-box-1.jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Agathe MOUSIN</h5>
-                        <h6>Développeur JAVA</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
-                <div class="trombImage2">
-                    <figure class="figure">
-                        <img src="images/trombi/téléchargement (1).jpg"
-                            class="figure-img img-fluid rounded-circle  Small shadow" alt="photo d'identité">
-                    </figure>
-                    <div class="trombContent">
-                        <h5>Nadia BOUSLEÏKIM</h5>
-                        <h6>Développeur PHP</h6>
-
-                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cite>
-                    </div>
-                </div>
+            <section class="trombTab2" id="continu">
+                <!-- Ici est injecté le code html par le JS pour les élèves en alternance-->
             </section>
 
         </main>
