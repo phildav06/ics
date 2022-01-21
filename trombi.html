@@ -47,6 +47,12 @@
             </div>
         </header>
         <div class="buttons">
+            <button type="button" class="btn-lg btn-success" onclick="getAll('');">Toutes les formations</button>
+            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en alternance');">Formation en alternance</button>
+            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en continu');">Formation en continu</button>
+        </div>
+
+        <div class="buttons">
             <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur web');">Développeur web</button>
             <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur JAVA');">Développeur JAVA</button>
             <button type="button" class="btn-lg btn-primary" onclick="getTitles('Développeur PHP');">Développeur PHP</button>
@@ -56,13 +62,8 @@
                 d'applications</button>
             <button type="button" class="btn-lg btn-primary" onclick="getTitles('Animateur e-commerce');">Animateur e-commerce</button>
         </div>
-        <div class="buttons">
-            <button type="button" class="btn-lg btn-secondary" onclick="getForm('');">Toutes les formations</button>
-            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en alternance');">Formation en alternance</button>
-            <button type="button" class="btn-lg btn-secondary" onclick="getForm('Élèves en continu');">Formation en continu</button>
-        </div>
+    
         <main>
-
             <section class="trombTab" id="altern">
                 <!-- Ici est injecté le code html par le JS pour les élèves en alternance-->
             </section>
@@ -70,7 +71,6 @@
             <section class="trombTab2" id="continu">
                 <!-- Ici est injecté le code html par le JS pour les élèves en alternance-->
             </section>
-
         </main>
 
         <footer class="page-footer font-small blue pt-4" style="background-color: #1257A4;">
