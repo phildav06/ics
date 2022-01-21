@@ -41,6 +41,22 @@ header {
     background-color: rosybrown;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.btn-primary {
+    background-color: #1257A4 !important;
+    border-color: #125097 !important;
+}
+
+.btn-primary:hover {
+    background-color: #1664bd !important;
+    border-color: #3378b4 !important;
+}
+
 
 #banniere {
     background-size: cover;
@@ -143,7 +159,7 @@ section {
     bottom: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1240px) {
 
     header {
         margin-bottom: 20px;
@@ -192,5 +208,14 @@ section {
 
     .carousel-caption {
         display: block !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
     }
 }
