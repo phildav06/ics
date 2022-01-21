@@ -187,6 +187,10 @@ section {
         border-radius: 0;
     }
 
+    section {
+        width: 100%;
+    }
+
     h5 {
         font-size: 18px !important;
     }
