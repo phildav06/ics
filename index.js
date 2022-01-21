@@ -186,24 +186,31 @@ formationContinue.innerHTML = elevesContinu;
 // const eleves = document.querySelectorAll("div.trombImage, div.trombContent, h6");
 // console.log('les élèves sont : ', eleves);
 
+function getAll(allFormations) {
+    let allForm = document.querySelectorAll(".trombImage, .trombImage2, .trombTab, .trombTab2");
+    for (let i = 0; i < allForm.length; i++) {
+        allForm[i].style.display = "flex";
+    }
+}
+
 function getTitles(formation) {
     let titles = document.getElementsByTagName("h6");
     for (let i = 0; i < titles.length; i++) {
         titles[i].parentNode.parentNode.style.display = "flex";
-        if(titles[i].innerText != formation){
+        if (titles[i].innerText != formation) {
             titles[i].parentNode.parentNode.style.display = "none";
         }
         console.log(titles[i].parentNode.parentNode);
-      }
-  }
+    }
+}
 
-  function getForm(alternContinu) {
-    let formations = document.querySelectorAll(".trombImage1", ".trombImage2");
+function getForm(alternContinu) {
+    let formations = document.querySelectorAll("h2");
     for (let i = 0; i < formations.length; i++) {
         formations[i].parentNode.style.display = "flex";
-        if(formations[i].innerText != alternContinu){
+        if (formations[i].innerText != alternContinu) {
             formations[i].parentNode.style.display = "none";
         }
         console.log(formations[i].parentNode);
-      }
-  }
+    }
+}
